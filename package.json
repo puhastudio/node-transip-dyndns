@@ -1,0 +1,39 @@
+{
+  "name": "transip-dyndns",
+  "version": "0.0.1",
+  "description": "A npm module which adds a DNS record with the current public ip to transip.",
+  "scripts": {
+    "start": "[ -d ./dist ] && node ./dist/index.js || node index.js",
+    "prebuild": "npm i; npm i -D babel-cli babel-preset-es2015",
+    "build": "npm run prebuild; babel --presets es2015 *.js -d dist",
+    "release": "echo '.*\n/*.js' > .npmignore ; npm run build ; npm publish"
+  },
+  "repository": "https://github.com/puhastudio/node-transip-dyndns.git",
+  "keywords": [
+    "transip",
+    "dynamic",
+    "dns"
+  ],
+  "author": {
+    "name": "Younes Riad"
+  },
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": {
+    "transip-dyndns": "dist/index.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.13.2",
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.2.0",
+    "eslint-plugin-react": "^4.2.3"
+  },
+  "dependencies": {
+    "homedir": "^0.6.0",
+    "minimist": "^1.2.0",
+    "node-env-file": "^0.1.8",
+    "public-ip": "^2.0.1",
+    "transip": "0.0.6"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "transip-dyndns",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A npm module which adds a DNS record with the current public ip to transip.",
   "scripts": {
     "start": "[ -d ./dist ] && node ./dist/index.js || node index.js",

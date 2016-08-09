@@ -1,4 +1,4 @@
-# node-trasnip-dyndns
+# node-transip-dyndns
 
 > A npm module which adds a DNS record with the current public ip to transip.
 

@@ -1,3 +1,6 @@
+# DEPRECATED
+Please see https://github.com/marklagendijk/node-transip-dns-cli
+
 # node-transip-dyndns
 
 > A npm module which adds a DNS record with the current public ip to transip.
